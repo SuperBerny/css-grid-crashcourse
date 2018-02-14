@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Intro to Grid</title>
+
+   <style>
+   /* add grid to .wrapper */
+      .wrapper {
+         display: grid;
+         grid-template-columns: 70% 30%;
+
+         /* sets gap for columns only */
+         /* grid-column-gap: 1em; */
+         
+         /* sets gap for rows only */
+         /* grid-row-gap: 1em; */
+         
+         /* sets gap for both columns and rows */
+         grid-gap: 1em;
+      }
+
+      .wrapper > div {
+         background: #eee;
+         padding: 1em;
+      }
+
+      .wrapper > div:nth-child(odd) {
+         background: #ddd;
+      }
+   </style>
+</head>
+<body>
+   <div class="wrapper">
+      <div class="main">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempore ducimus odio magni error ab voluptatum optio fugiat, unde quis. Quasi illum doloribus expedita rerum, rem doloremque, repellat a iusto vero omnis ut magnam nemo quos laboriosam reprehenderit est voluptas. Illum optio mollitia esse voluptates sequi, amet iusto hic dolore ullam inventore rem dignissimos quisquam velit quidem consectetur accusantium aut deserunt quae aliquid cumque eos voluptatem fuga quam! Deleniti obcaecati in maxime recusandae voluptatibus natus similique magnam et modi iusto?
+      </div>
+      <div class="sidebar">
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo qui nobis quam, voluptates sed distinctio dolores temporibus vitae blanditiis consequuntur facere, veniam officia saepe architecto deserunt? Doloribus ipsa reprehenderit dolorem.
+      </div>
+      <div class="main">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempore ducimus odio magni error ab voluptatum optio fugiat, unde quis. Quasi illum doloribus expedita rerum, rem doloremque, repellat a iusto vero omnis ut magnam nemo quos laboriosam reprehenderit est voluptas. Illum optio mollitia esse voluptates sequi, amet iusto hic dolore ullam inventore rem dignissimos quisquam velit quidem consectetur accusantium aut deserunt quae aliquid cumque eos voluptatem fuga quam! Deleniti obcaecati in maxime recusandae voluptatibus natus similique magnam et modi iusto?
+      </div>
+      <div class="sidebar">
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo qui nobis quam, voluptates sed distinctio dolores temporibus vitae blanditiis consequuntur facere, veniam officia saepe architecto deserunt? Doloribus ipsa reprehenderit dolorem.
+      </div>
+   </div>
+</body>
+</html>
